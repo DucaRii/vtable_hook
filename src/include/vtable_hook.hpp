@@ -78,7 +78,6 @@ namespace vtable_hook
 		/// <summary>
 		/// Creates default hook object
 		/// </summary>
-		/// <param name="ret">Address of return address</param>
 		hook_t() = default;
 
 		/// <summary>
