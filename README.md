@@ -15,6 +15,6 @@ int main()
 	auto hook = vtable_hook::hook_t( ptr_to_object_of_vtable );
 	hook.hook( 42, replacement_function );
 
-	auto original_function = hook.get_original<int( __thiscall* )( )>( 42 );
+	auto original_function = hook.get_original<int( __thiscall* )( void* ecx )>( 42 );
 }
 ```
